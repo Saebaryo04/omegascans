@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px)
+#readingarea.areamin {
+    margin: 0px 0px;
+}
+@media only screen and (max-width: 800px)
+#readingarea.areamin {
+    margin: 10px 20px;
+}
+#readingarea.areamin {
+    text-align: left;
+    line-height: 23px;
+}
+#readingarea {
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    max-width: 1142px;
+  }
+  #readingarea p {
+    margin: 0;
+}
+@media only screen and (max-width: 650px)
+#readingarea img {
+    border: 0;
+}
+#readingarea img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
