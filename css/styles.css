@@ -185,7 +185,7 @@ h3 {
   width: 100%;
   float: left;
 }
-.comicsummary a:visited{
+.listing .cmicdtl .comicsummary a:visited{
   text-decoration: none;
   color: #f4f4f4;
 }
