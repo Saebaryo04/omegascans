@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
-  background-color: black;
+
 }
 
 a {
@@ -105,23 +105,9 @@ h3 {
 
 /*navbar*/
 /*releases*/
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-
   /*  margin-right: auto;
     margin-left: auto; after release of more chapters*/
 }
@@ -131,6 +117,7 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -147,7 +134,7 @@ h3 {
   max-width: 250px
 }
 
-@media (max-width: 992px) {
+@media (max-width: 720px) {
   .allrelease {
     border-bottom: none;
     padding-bottom: 0;
@@ -159,16 +146,12 @@ h3 {
   }
 }
 
-.allrelease {
-
-  box-sizing: border-box;
-}
-
-.listing {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 20px;
+@media (max-width: 720px) {
+  .listing {
+    position: relative;
+    width: 100%;
+    max-width: 300px
+  }
 }
 
 .thumbimg {
@@ -176,7 +159,6 @@ h3 {
   margin-bottom: 10px;
   float: left;
   overflow: hidden;
-  margin-right: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -185,18 +167,32 @@ h3 {
   width: 100%;
   float: left;
 }
-.listing .cmicdtl .comicsummary a:visited{
+
+.listing .cmicdtl .comicsummary a:visited {
   text-decoration: none;
   color: #f4f4f4;
 }
+
 .comicsummary {
   overflow: hidden;
+}
+
+.cmicdtl {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .listing .cmicdtl .comicsummary .chapter-list ul li {
   margin-bottom: 10px;
   font-size: 14px;
+  min-width: 150px;
+  overflow: visible;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 6px 10px;
+  max-width: 250px
 }
+
 .listing .cmicdtl .comicsummary .chapter-list ul li a:visited {
   text-decoration: none;
   color: #66A3BB;
@@ -206,10 +202,18 @@ h3 {
   float: right;
   color: #555;
   font-size: 12px;
+  padding: 0px 5px
 }
 
 .listing .cmicdtl .comicsummary .chapter-list ul {
-  padding-left: 30px
+  padding-left: 30px;
+  list-style-type: none
+}
+
+.listing .cmicdtl .comicsummary .chapter-list ul li span {
+  float: right;
+  color: #555;
+  font-size: 12px;
 }
 
 /*releases*/
@@ -219,7 +223,6 @@ h3 {
     width: 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
   }
 }
 
@@ -238,13 +241,10 @@ h3 {
   margin-bottom: 1rem !important;
   border-radius: 0.25rem !important;
   text-align: center;
-  padding-right: 30px;
 }
 
 .widget {
   margin-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .widget {
@@ -320,7 +320,6 @@ h4 {
 .allcontent {
   background-color: #363636;
   margin-top: 6px;
-
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 10px;
   margin-bottom: 30px;
@@ -332,7 +331,6 @@ h4 {
   margin-right: auto;
   text-align: center;
   max-width: 250px
-
 }
 
 .tpst i {
@@ -353,8 +351,6 @@ h4 {
     margin-top: 6px;
     max-width: 350px
   }
-
-
 }
 
 .tpst {
@@ -368,73 +364,81 @@ h4 {
   overflow: hidden;
   margin-top: 6px;
   font-size: 13px;
-
 }
 
 .tpst span {
   float: left;
 }
+
 .omegainfo {
   color: #b8b8b8;
   padding-left: 15px;
   padding-right: 15px;
-
-    text-align: left;
+  text-align: left;
 }
+
 .releasename {
   position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    border-bottom: 1px solid #312f40;
-    padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #312f40;
+  padding: 8px 15px;
 }
+
 .listch {
   margin: 15px
 }
-.listch  ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    margin-left: -5px;
-    overflow: auto;
-    max-height: 250px;
+
+.listch ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-left: -5px;
+  overflow: auto;
+  max-height: 250px;
 }
+
 .list {
   color: #b8b8b8
 }
+
 .release-datech {
   float: none;
   color: grey;
   font-size: 14px;
   font-weight: 200
 }
+
 .lichbox {
   overflow: hidden;
-    padding: 5px 10px;
-    border: 1px solid grey;
-    font-size: 14px;
-    margin: 0 5px;
-    margin-bottom: 10px;
-    position: relative;
-    border-radius: 5px;
-
+  padding: 5px 10px;
+  border: 1px solid grey;
+  font-size: 14px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 5px;
 }
-.lichnum{
+
+.lichnum {
   float: left;
 }
+
 .list .listch ul li .lichnum span {
-    font-weight: 400;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    font-size: 16px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
 }
+
 .list .listch ul li a {
   text-decoration: none;
   color: grey;
 }
+
 .list .listch ul li a:visited {
   text-decoration: none;
   color: #66A3BB
