@@ -29,7 +29,7 @@ h4 {
 
 @media only screen and (max-width: 720px) {
   #readingarea.areamin {
-    margin: 10px 20px;
+    margin: 10px 0;
   }
 }
 
