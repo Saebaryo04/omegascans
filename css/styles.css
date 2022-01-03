@@ -48,12 +48,12 @@ h4 {
 
 .topnav a:hover {
   background-color: #253A47;
-  color: white;
+  color: #ffffff;
 }
 
 .topnav a.active {
   background-color: #253A47;
-  color: white;
+  color: #ffffff;
 }
 
 .topnav .icon {
@@ -116,7 +116,7 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -131,7 +131,7 @@ h4 {
   width: 100%;
   height: 235px;
   max-width: 250px;
-  padding: 6px 10px;
+  padding: 0 10px 6px 0;
 }
 
 @media (max-width: 720px) {
@@ -159,6 +159,7 @@ h4 {
   margin-bottom: 10px;
   float: left;
   position: relative;
+  overflow: hidden;
 }
 
 .comicsummary {
@@ -185,10 +186,15 @@ h4 {
   font-size: 14px;
   min-width: 150px;
   overflow: visible;
-  border: 1px solid grey;
+  border: 1px solid #808080;
   border-radius: 3px;
   padding: 6px 10px;
   max-width: 250px
+}
+
+.listing .cmicdtl .comicsummary .chapter-list ul li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .listing .cmicdtl .comicsummary .chapter-list ul li a:visited {
@@ -261,7 +267,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   background-color: #333;
-  color: grey;
+  color: #808080;
   font-size: 12px;
   text-align: center;
 }
@@ -270,7 +276,7 @@ h4 {
   margin: auto;
   display: flex;
   background-color: #333;
-  color: grey;
+  color: #808080;
 }
 
 .chapter-list ul li {
@@ -373,16 +379,19 @@ h4 {
   margin-left: -5px;
   overflow: auto;
   max-height: 250px;
+  border-radius: 10px
 }
 
 .list {
   color: #b8b8b8;
   background-color: #363636;
+  padding: 10px 0;
+  margin-bottom: 10px
 }
 
 .release-datech {
   float: none;
-  color: grey;
+  color: #808080;
   font-size: 14px;
   font-weight: 200
 }
@@ -390,7 +399,7 @@ h4 {
 .lichbox {
   overflow: hidden;
   padding: 5px 10px;
-  border: 1px solid grey;
+  border: 1px solid #808080;
   font-size: 14px;
   margin: 0;
   margin-bottom: 10px;
@@ -413,7 +422,7 @@ h4 {
 
 .list .listch ul li a {
   text-decoration: none;
-  color: grey;
+  color: #808080;
 }
 
 .list .listch ul li a:visited {
@@ -443,7 +452,7 @@ h4 {
   border: none;
   outline: none;
   background-color: #66a3bb;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   padding: 10px 12px 10px 12px;
   border-radius: 50%;
@@ -457,3 +466,34 @@ h4 {
 #myBtn:hover {
   background-color: #253A47;
 }
+
+.list .listch ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.list .listch ul::-webkit-scrollbar-track {
+  background-color: #66a3bb;
+  border-radius: 10px
+}
+
+.list .listch ul::-webkit-scrollbar-thumb {
+  background-color: #253a47;
+  outline: 1px solid #253a47;
+  border-radius: 10px
+}
+
+.massrelease {
+  position: absolute;
+  top: 5px;
+  background-color: red;
+  color: #ffffff;
+  padding-right: 35px;
+  padding-left: 35px;
+  left: -25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-weight: bold;
+
+}
+
