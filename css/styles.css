@@ -105,10 +105,9 @@ h4 {
 /*navbar*/
 /*releases*/
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  /*  margin-right: auto;
-    margin-left: auto; after release of more chapters*/
+  padding: 0 15px;
+  /* margin-right: auto;
+    margin-left: auto;*/
 }
 
 .allcomics {
@@ -117,9 +116,7 @@ h4 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: space-evenly;
+  margin: 0 -15px;
 }
 
 .listing {
@@ -136,6 +133,12 @@ h4 {
 }
 
 @media (max-width: 720px) {
+  .listing {
+    position: relative;
+    width: 100%;
+    max-width: 300px
+  }
+
   .allrelease {
     border-bottom: none;
     padding-bottom: 0;
@@ -144,14 +147,6 @@ h4 {
 
   .cmicdtl {
     margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 720px) {
-  .listing {
-    position: relative;
-    width: 100%;
-    max-width: 300px
   }
 }
 
@@ -178,14 +173,13 @@ h4 {
 }
 
 .cmicdtl {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px
 }
 
 .listing .cmicdtl .comicsummary .chapter-list ul li {
   margin-bottom: 10px;
   font-size: 14px;
-  min-width: 175px;
+  min-width: 150px;
   overflow: visible;
   border: 1px solid #808080;
   border-radius: 3px;
@@ -265,8 +259,7 @@ h4 {
 
 .rights {
   padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: #333;
   color: #808080;
   font-size: 12px;
@@ -286,7 +279,7 @@ h4 {
 }
 
 .path {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: #f4f4f4;
   background-color: #363636;
@@ -312,8 +305,7 @@ h4 {
 
 .info {
   padding-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   max-width: 250px
 }
@@ -346,7 +338,7 @@ h4 {
   border-radius: 3px;
   overflow: hidden;
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tpst span {
@@ -355,8 +347,7 @@ h4 {
 
 .omegainfo {
   color: #b8b8b8;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   text-align: left;
 }
 
@@ -449,7 +440,7 @@ h4 {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   outline: none;
   background-color: #66a3bb;
@@ -488,13 +479,8 @@ h4 {
   top: 5px;
   background-color: red;
   color: #ffffff;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding: 5px 35px;
   left: -25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   display: inline-block;
   font-weight: bold;
-
 }
-
